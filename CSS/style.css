@@ -39,6 +39,8 @@ header {
     width: 100%;
     margin: 0;
     padding: 0;
+    position:fixed;
+    
 }
 
 .header__box {
@@ -51,7 +53,7 @@ header {
     display: flex;
     margin-top: 0;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .presentacion , h1 , h2 , p , #botones {
@@ -182,18 +184,36 @@ main {
 
 #page_experiencia{
     display: block;
+    align-items: center;
 }
 #page_experiencia h1 {
+    box-sizing: content-box;
     width: 100%;
     text-align: center;
-    display: flex;
-    box-sizing: content-box;
+
 }
-#moovmedia {
+.moovmedia {
 display: flex;
 padding-top: 100px;
+padding-left: 100px;
 gap: 50px;
 }
+.unab {
+display: flex;
+padding-top: 100px;
+padding-left: 100px;
+gap: 50px;
+}
+
+#page_experiencia h2 {
+    margin-top: 100px;
+    box-sizing: content-box;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
 
 /*===============*/
 /*Contacto*/
