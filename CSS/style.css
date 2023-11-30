@@ -125,28 +125,76 @@ main {
     /*Servicios*/
     /*===============*/
 
-#servicios {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
+#main_servicios{
+    display: block;
 }
-#servicios h1 {
+#containerGridServicios {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: 
+        /*  COL1             COL2*/
+        "txt_servicio1 img_servicio1"  /*FILA 1*/
+        "txt_servicio2 img_servicio2"  /*FILA 2*/
+        "txt_servicio3 img_servicio3" /*FILA 3*/
+}
+/*AREAS PARA LOS SERVICIOS*/
+.txt_servicio1 {
+    grid-area: txt_servicio1;
+}
+.img_servicio1 {
+    grid-area: img_servicio1;
+}
+.txt_servicio2 {
+    grid-area: txt_servicio2;
+}
+.img_servicio2 {
+    grid-area: img_servicio2;
+}
+.txt_servicio3 {
+    grid-area: txt_servicio3;
+}
+.img_servicio3 {
+    grid-area: img_servicio3;
+}
+
+
+.img_servicio1 {
+    background-image: url(../Images/Images/Servicio\ Administración\ Web.jpeg);
+    background-size: cover;
+    width: 20%;
+}
+.img_servicio2 {
+    background-image: url(../Images/Images/Servicio\ Administración\ Web.jpeg);
+    background-size: cover;
+    width: 20%;
+}
+.img_servicio3 {
+    background-image: url(../Images/Images/Servicio\ Administración\ Web.jpeg);
+    background-size: cover;
+    width: 20%;
+}
+
+/*===============*/
+/*Experiencia*/
+/*===============*/
+
+#page_experiencia{
+    display: block;
+}
+#page_experiencia h1 {
+    width: 100%;
     text-align: center;
-    margin: 10px;
-}
-
-.servicio_img{
-    width: 20vh;
-}
-#servicios .servicios_box {
-    width: 100%;
     display: flex;
-    flex-direction: column;
-}    
-
-.servicios_detalle {
-    flex-direction: column;
+    box-sizing: content-box;
 }
+#moovmedia {
+display: flex;
+padding-top: 100px;
+gap: 50px;
+}
+
 /*===============*/
 /*Contacto*/
 /*===============*/
@@ -160,7 +208,7 @@ main {
         justify-content: center;
     }
 
-    .form_info h1 {
+    #formulario h1 {
         text-align: center;
     }
 
@@ -177,17 +225,25 @@ main {
             height: 200px;
         }
     
-   
-
     .form_data {
         margin: 20px;
         margin-left: 50px;
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
         resize: none;
+    }
 
-    
+    .form_boton {
+        width: 120px;
+        height: 40px;
+        color: white;
+        background-color: #273a97;
+        border-radius: 10px;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
 
@@ -195,12 +251,12 @@ main {
     footer {
         margin-top: auto;
         width: 100%;
-        height: 170px;
+        height: 200px;
         background-color: rgb(38, 59, 152);
         display: flex; 
         justify-content: center;
         align-items: center;
-       
+    
     }
 
     .footer_box {
@@ -212,7 +268,7 @@ main {
         justify-content: space-around
     }
     
- .footer__Links ul { 
+.footer__Links ul { 
         font-size: 20px;
         display:flex;
         list-style: none;
@@ -220,6 +276,7 @@ main {
         text-decoration:none;
         flex-direction: column;
         align-items: center;
+        gap: 5px;
     }
 
     /*Color NavFooter*/
