@@ -2,7 +2,9 @@
 /*SEGUNDA PRE ENTREGA*/
 /*PSEUDO CLASES: NAVBAR*/
 /*Bootstrap NavBar*/
-/*Responsive 1: presentación*/
+/*Responsive 1: Presentación*/
+/*Responsive 2: Experiencia (por favor ayuda para revisar por que se cambian los resposives. La  idea es que lavista en full pantalla se vea todos los logos en una fila, en max width 800 en 2 filas y en max width 500 en una columna.*/
+/*Responsive 3: Contacto*/
 /*RESET CSS*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
@@ -11,6 +13,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 
 /*Color NavBar*/
@@ -50,6 +53,7 @@ header {
   margin-top: 0;
   align-items: center;
   justify-content: space-around;
+  position: sticky;
 }
 
 ul {
@@ -203,6 +207,7 @@ h1, h2 {
   padding-top: 100px;
   padding-left: 100px;
   gap: 50px;
+  align-items: center;
 }
 
 .unab {
@@ -210,6 +215,7 @@ h1, h2 {
   padding-top: 100px;
   padding-left: 100px;
   gap: 50px;
+  align-items: center;
 }
 
 #page_experiencia h2 {
@@ -217,6 +223,14 @@ h1, h2 {
   box-sizing: content-box;
   width: 100%;
   text-align: center;
+}
+
+/*===============*/
+/*Clientes*/
+/*===============*/
+.logos {
+  max-width: 100%;
+  display: flex;
 }
 
 /*===============*/
@@ -309,14 +323,9 @@ footer {
   margin: 20px;
 }
 
-@media (max-width: 800px) {
-  main {
-    display: inline;
-    width: 90%;
-    height: 100%;
-    margin: 10px;
-  }
-}
+/*====================*/
+/*Responsive - Inicio*/
+/*==================*/
 @media (max-width: 500px) {
   .presentacion, h1, h2, p, #botones, .img_presentacion {
     margin-top: 20px;
@@ -339,5 +348,76 @@ footer {
     margin-left: 70px;
   }
 }
+/*=========================*/
+/*Responsive - Experiencia*/
+/*por favor ayuda para revisar por que se cambian los resposives. La  idea es que lavista en full pantalla se vea todos los logos en una fila, en max width 800 en 2 filas y en max width 500 en una columna*/
+/*=======================*/
+@media (max-width: 800px) {
+  .moovmedia {
+    display: block;
+    justify-content: center;
+    padding-top: 100px;
+    padding-left: 100px;
+    gap: 50px;
+  }
+  .unab {
+    justify-content: center;
+    display: block;
+    padding-top: 100px;
+    padding-left: 100px;
+    gap: 50px;
+  }
+  #Clientes h2 {
+    margin-bottom: 50px;
+  }
+  .clientes_logos1 {
+    max-width: 100%;
+    display: flex;
+  }
+  .clientes_logos2 {
+    max-width: 100%;
+    display: flex;
+  }
+}
+@media (max-width: 550px) {
+  .logos {
+    display: inline;
+  }
+}
+/*======================*/
+/*Responsive - Contacto*/
+/*====================*/
+@media (max-width: 550px) {
+  .form_input {
+    resize: none;
+    border: solid;
+    width: 450px;
+    height: 30px;
+    font-size: 20px;
+  }
+  .form_boton {
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #273a97;
+    border-radius: 10px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .form_input {
+    resize: none;
+    border: solid;
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+  }
+}
+/*======================*/
+/*Responsive - Footer*/
+/*====================*/
 
 /*# sourceMappingURL=style.css.map */
