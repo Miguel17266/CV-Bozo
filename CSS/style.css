@@ -16,6 +16,10 @@
   max-width: 100%;
 }
 
+#index, #servicios, #contacto, #skills, #experiencia {
+  margin-top: 140px;
+}
+
 /*Color NavBar*/
 #navbarNavAltMarkup a {
   color: rgb(47, 47, 47);
@@ -39,8 +43,10 @@ header {
   justify-content: flex-end;
   shape-margin: 5%;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 50px;
+  position: fixed;
+  background-color: white;
+  top: 0;
 }
 
 .header__box {
@@ -74,11 +80,11 @@ header nav ul li {
 /*===============*/
 /*Presentación*/
 /*===============*/
-main {
+#index {
   display: flex;
   width: 90%;
   height: 100%;
-  margin: 10px;
+  margin: 100px;
 }
 
 .presentacion, h1, h2, p, #botones {
@@ -94,6 +100,10 @@ h1, h2 {
   padding-left: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.img_presentacion {
+  width: 100%;
 }
 
 .botones {
@@ -131,67 +141,51 @@ h1, h2 {
 }
 
 /*===============*/
-/*Servicios*/
+/*Skills*/
 /*===============*/
-#main_servicios {
-  display: block;
+#skills {
+  max-width: 100%;
+  box-sizing: content-box;
 }
 
-#containerGridServicios {
-  width: 50%;
+#skills h1 {
+  text-align: center;
+}
+
+/*===============*/
+/*Servicios 2*/
+/*===============*/
+#img_servicios {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 300px);
-  grid-template-areas: "txt_servicio1 img_servicio1" "txt_servicio2 img_servicio2" "txt_servicio3 img_servicio3";
+  grid-template-columns: 500px 500px;
+  grid-template-rows: repeat(2, 500px);
+  gap: 10px;
+  grid-area: "txt_rrss img_rrss" "txt_web img_wen" "txt_edicion img_edicion";
 }
 
-/*AREAS PARA LOS SERVICIOS*/
-.txt_servicio1 {
-  grid-area: txt_servicio1;
-}
-
-.img_servicio1 {
-  grid-area: img_servicio1;
-}
-
-.txt_servicio2 {
-  grid-area: txt_servicio2;
-}
-
-.img_servicio2 {
-  grid-area: img_servicio2;
-}
-
-.txt_servicio3 {
-  grid-area: txt_servicio3;
-}
-
-.img_servicio3 {
-  grid-area: img_servicio3;
-}
-
-.img_servicio1 {
-  background-image: url(../Images/Images/Servicio\ AdministracioÌn\ Web.jpeg);
+.txt_rrss {
   background-size: cover;
-  width: 20%;
 }
 
-.img_servicio2 {
-  background-image: url(../Images/Images/Servicio\ AdministracioÌn\ Web.jpeg);
+.img_rrss {
+  background-image: url(../Images/Images/Servicio\ Redes\ Sociales.jpeg);
   background-size: cover;
-  width: 20%;
 }
 
-.img_servicio3 {
-  background-image: url(../Images/Images/Servicio\ AdministracioÌn\ Web.jpeg);
+.img_web {
+  background-image: url(../Images/Images/Servicio\ Administración\ Web.jpeg);
   background-size: cover;
-  width: 20%;
+}
+
+.img_edicion {
+  background-image: url(../Images/Images/Servicio\ Edición\ Videos.jpeg);
+  background-size: cover;
 }
 
 /*===============*/
 /*Experiencia*/
 /*===============*/
-#page_experiencia {
+#experiencia {
   display: block;
   align-items: center;
 }
@@ -236,7 +230,7 @@ h1, h2 {
 /*===============*/
 /*Contacto*/
 /*===============*/
-#form {
+#contacto {
   padding-left: 0;
   padding-right: 0;
   width: 100%;
