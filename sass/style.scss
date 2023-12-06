@@ -1,8 +1,13 @@
+/*PROBLEMAS*/
+/*1. (por favor ayuda para revisar por que se cambian los resposives. La  idea es que lavista en full pantalla se vea todos los logos en una fila, en max width 800 en 2 filas y en max width 500 en una columna(por favor ayuda para revisar por que se cambian los resposives. La  idea es que lavista en full pantalla se vea todos los logos en una fila, en max width 800 en 2 filas y en max width 500 en una columna*/
+/*2. Tengo problemas para centrar los objetos*/
+/*3. no me agarra el GRID*/
+
 /*SEGUNDA PRE ENTREGA*/
 /*PSEUDO CLASES: NAVBAR*/
 /*Bootstrap NavBar*/
 /*Responsive 1: Presentación*/
-/*Responsive 2: Experiencia (por favor ayuda para revisar por que se cambian los resposives. La  idea es que lavista en full pantalla se vea todos los logos en una fila, en max width 800 en 2 filas y en max width 500 en una columna.*/
+/*Responsive 2: Experiencia*/
 
 /*Responsive 3: Contacto*/
 
@@ -22,9 +27,9 @@
 }
 
 #index , #servicios , #contacto , #skills , #experiencia {
-    margin-top: 140px;
+    margin-top: 10px;
 }
-/*Color NavBar*/
+/*Color NvBar*/
 #navbarNavAltMarkup a {
     color: rgb(47, 47, 47);
     font-size: 20px;
@@ -36,8 +41,9 @@ a , li {
     text-decoration: none;
 }
 
-
+/*===============*/
 /*PSEUDOCLASE*/
+/*===============*/
 #navbarNavAltMarkup a:hover {
     color: rgb(113, 97, 193);
 
@@ -49,9 +55,6 @@ header {
     shape-margin: 5%;
     width: 100%;
     margin-bottom: 50px;
-    position: fixed;
-    background-color: white;
-    top: 0;
 }
 
 .header__box {
@@ -73,7 +76,7 @@ ul{
     text-decoration: none;
     display: flex;
     flex-direction: row; 
-    justify-content: ceter;
+    justify-content: center;
     text-decoration: none;
 
 }
@@ -88,14 +91,14 @@ header nav ul li {
 /*Presentación*/
 /*===============*/
 
-#index {
+#main {
     display: flex;
     width: 90%;
     height: 100%;
-    margin: 100px;
+    margin: 10px;
 }
 
-.presentacion , h1 , h2 , p , #botones {
+.presentacion , h1 , h2 , p , #botones , .img_presentacion {           
     margin-top: 20px;
     width: 80%;
 }
@@ -152,10 +155,80 @@ h1 , h2 {
 
 #skills {
     max-width: 100%;
+    padding: 0;
+    margin: 0;
     box-sizing: content-box;
 }
 #skills h1 {
+    margin-top: 10px;
+    box-sizing: content-box;
+    width: 100%;
     text-align: center;
+}
+
+.udp{
+    display: flex;
+    margin-top: 10px;
+    box-sizing: content-box;
+    width: 100%;
+    text-align: center;
+    margin-left: 100px;
+}
+.adity {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+.coderhouse {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+.txt_adity ul{
+    display:flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+/*===============*/
+/*=====Skills====*/
+/*===============*/
+#skills h2 {
+    margin-top: 10px;
+    box-sizing: content-box;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#suite_adobe{
+    display: flex;
+    width: 600px;
+    max-width: 100vh;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    justify-items: center;    
+    gap: 50px;
+}
+#desarrollo_web{
+    display: flex;
+    width: 600px;
+    margin-bottom: 100px;
+    max-width: 100%;
+    margin-left: 50px;
+    justify-items: center;    
+    gap: 50px;
+}
+#google{
+    display: flex;
+    width: 250px;
+    margin-bottom: 100px;
+    max-width: 100%;
+    margin-left: 50px;
+    justify-items: center;    
+    gap: 50px;
 }
 /*===============*/
 /*Servicios 2*/
@@ -194,7 +267,8 @@ h1 , h2 {
     display: block;
     align-items: center;
 }
-#page_experiencia h1 {
+#experiencia h1 {
+    margin-top: 100px;
     box-sizing: content-box;
     width: 100%;
     text-align: center;
@@ -202,7 +276,7 @@ h1 , h2 {
 }
 .moovmedia {
 display: flex;
-padding-top: 100px;
+padding-top: 50px;
 padding-left: 100px;
 gap: 50px;
 align-items: center;
@@ -215,7 +289,7 @@ gap: 50px;
 align-items: center;
 }
 
-#page_experiencia h2 {
+#experiencia h2 {
     margin-top: 100px;
     box-sizing: content-box;
     width: 100%;
@@ -228,6 +302,7 @@ align-items: center;
 .logos {
     max-width: 100%;
     display: flex;
+    box-sizing: border-box;
 }
 
 /*===============*/
@@ -326,23 +401,46 @@ align-items: center;
     /*====================*/
     /*Responsive - Inicio*/
     /*==================*/
+    @media (max-width: 900px) {
+        .presentacion , h1 , h2 , p , #botones , .img_presentacion {
+            margin-top: 20px;
+            width: 80%;
+        }
+
+        #main {
+            display: inline;
+            align-items: center;
+        }
+        
+            .presentacion{
+                padding-left: 20px;
+                margin-top: 10px;
+                margin-bottom: 0px;
+            }
+        .botones {
+            display: flex;
+            width: 50%;
+            margin-left: 70px;
+        }
+    }
         @media (max-width: 500px) {
             .presentacion , h1 , h2 , p , #botones , .img_presentacion {
                 
                 margin-top: 20px;
                 width: 80%;
             }
-            main {
+            #main {
                 display: inline;
                 width: 90%;
                 height: 100%;
                 margin: 10px;
+            }
                 .presentacion{
                     padding-left: 20px;
                     margin-top: 10px;
                     margin-bottom: 0px;
                 }
-            }
+                
             .botones {
                 display: inline;
                 width: 50%;
