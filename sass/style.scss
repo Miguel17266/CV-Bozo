@@ -1,14 +1,12 @@
 /*PROBLEMAS*/
-/*1. (por favor ayuda para revisar por que se cambian los resposives. La  idea es que lavista en full pantalla se vea todos los logos en una fila, en max width 800 en 2 filas y en max width 500 en una columna(por favor ayuda para revisar por que se cambian los resposives. La  idea es que lavista en full pantalla se vea todos los logos en una fila, en max width 800 en 2 filas y en max width 500 en una columna*/
-/*2. Tengo problemas para centrar los objetos*/
-/*3. no me agarra el GRID*/
+/*1. Tengo problemas para centrar los objetos*/
+/*2. no me agarra el GRID en página SERVICIOS*/
 
 /*SEGUNDA PRE ENTREGA*/
 /*PSEUDO CLASES: NAVBAR*/
 /*Bootstrap NavBar*/
 /*Responsive 1: Presentación*/
 /*Responsive 2: Experiencia*/
-
 /*Responsive 3: Contacto*/
 
 
@@ -26,15 +24,22 @@
     max-width: 100%;
 }
 
-#index , #servicios , #contacto , #skills , #experiencia {
+#index,
+#servicios,
+#contacto,
+#skills,
+#experiencia {
     margin-top: 10px;
 }
+
 /*Color NvBar*/
 #navbarNavAltMarkup a {
     color: rgb(47, 47, 47);
     font-size: 20px;
 }
-a , li {
+
+a,
+li {
     display: inline-block;
     font-style: none;
     list-style: none;
@@ -58,9 +63,9 @@ header {
 }
 
 .header__box {
-    box-shadow: 1px 5px 9px 1px rgba(0,0,0,0.75);
--webkit-box-shadow: 1px 5px 9px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 5px 9px 1px rgba(0,0,0,0.75);
+    box-shadow: 1px 5px 9px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 5px 9px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 5px 9px 1px rgba(0, 0, 0, 0.75);
     list-style: none;
     width: content-box;
     display: flex;
@@ -68,24 +73,23 @@ header {
     align-items: center;
     justify-content: space-around;
     position: sticky
-    
-
 }
 
-ul{
+ul {
     text-decoration: none;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: center;
     text-decoration: none;
 
 }
+
 header nav ul li {
     display: flex;
     font-size: 20px;
     text-decoration: none;
     margin-left: 10px;
-    }
+}
 
 /*===============*/
 /*Presentación*/
@@ -98,56 +102,64 @@ header nav ul li {
     margin: 10px;
 }
 
-.presentacion , h1 , h2 , p , #botones , .img_presentacion {           
+.presentacion,
+h1,
+h2,
+p,
+#botones,
+.img_presentacion {
     margin-top: 20px;
     width: 80%;
 }
 
-h1 , h2 {
+h1,
+h2 {
     color: rgb(38, 59, 152);
 }
 
-    .presentacion{
-        padding-left: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .img_presentacion{
-        width: 100%;
-    }
+.presentacion {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
-    .botones {
-        display: flex;
-        width: 50%;
-        margin-left: 70px;
-        gap: 30px;
-    }
-    .boton_skills {
-        width: 120px;
-        height: 40px;
-        background-color: #273a97;
-        border-radius: 10px;
-        margin: 50px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.img_presentacion {
+    width: 100%;
+}
 
-    .boton_contacto {
-        width: 120px;
-        height: 40px;
-        background-color: #273a97;
-        border-radius: 10px;
-        margin: 50px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .botones a {
-        color: white;
-        font-weight: 600px;
-    }
+.botones {
+    display: flex;
+    width: 50%;
+    margin-left: 70px;
+    gap: 30px;
+}
+
+.boton_skills {
+    width: 120px;
+    height: 40px;
+    background-color: #273a97;
+    border-radius: 10px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton_contacto {
+    width: 120px;
+    height: 40px;
+    background-color: #273a97;
+    border-radius: 10px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones a {
+    color: white;
+    font-weight: 600px;
+}
 
 /*===============*/
 /*Skills*/
@@ -159,6 +171,7 @@ h1 , h2 {
     margin: 0;
     box-sizing: content-box;
 }
+
 #skills h1 {
     margin-top: 10px;
     box-sizing: content-box;
@@ -166,7 +179,7 @@ h1 , h2 {
     text-align: center;
 }
 
-.udp{
+.udp {
     display: flex;
     margin-top: 10px;
     box-sizing: content-box;
@@ -174,25 +187,29 @@ h1 , h2 {
     text-align: center;
     margin-left: 100px;
 }
+
 .adity {
     max-width: 100%;
     display: flex;
     align-items: center;
     margin-left: 100px;
 }
+
 .coderhouse {
     max-width: 100%;
     display: flex;
     align-items: center;
     margin-left: 100px;
 }
-.txt_adity ul{
-    display:flex;
+
+.txt_adity ul {
+    display: flex;
     text-align: left;
     flex-direction: column;
     align-items: center;
     gap: 5px;
 }
+
 /*===============*/
 /*=====Skills====*/
 /*===============*/
@@ -203,57 +220,66 @@ h1 , h2 {
     text-align: center;
     margin-bottom: 50px;
 }
-#suite_adobe{
+
+#suite_adobe {
     display: flex;
     width: 600px;
     max-width: 100vh;
     margin-bottom: 100px;
     margin-left: 50px;
-    justify-items: center;    
-    gap: 50px;
+    justify-items: center;
+    text-align: center;
+        gap: 50px;
 }
-#desarrollo_web{
+
+#desarrollo_web {
     display: flex;
     width: 600px;
     margin-bottom: 100px;
     max-width: 100%;
     margin-left: 50px;
-    justify-items: center;    
+    justify-items: center;
     gap: 50px;
 }
-#google{
+
+#google {
     display: flex;
     width: 250px;
     margin-bottom: 100px;
     max-width: 100%;
     margin-left: 50px;
-    justify-items: center;    
+    justify-items: center;
     gap: 50px;
 }
+
 /*===============*/
 /*Servicios 2*/
 /*===============*/
-#img_servicios{
+#img_servicios {
     display: grid;
     grid-template-columns: 500px 500px;
-    grid-template-rows: repeat(2,500px);
+    grid-template-rows: repeat(2, 500px);
     gap: 10px;
-    grid-area: 
-    "txt_rrss img_rrss"
-    "txt_web img_wen"
-    "txt_edicion img_edicion";
+    grid-area:
+        "txt_rrss img_rrss"
+        "txt_web img_wen"
+        "txt_edicion img_edicion";
 }
+
 .txt_rrss {
     background-size: cover;
 }
+
 .img_rrss {
     background-image: url(../Images/Images/Servicio\ Redes\ Sociales.jpeg);
     background-size: cover;
 }
+
 .img_web {
     background-image: url(../Images/Images/Servicio\ Administración\ Web.jpeg);
     background-size: cover;
 }
+
 .img_edicion {
     background-image: url(../Images/Images/Servicio\ Edición\ Videos.jpeg);
     background-size: cover;
@@ -263,10 +289,11 @@ h1 , h2 {
 /*Experiencia*/
 /*===============*/
 
-#experiencia{
+#experiencia {
     display: block;
     align-items: center;
 }
+
 #experiencia h1 {
     margin-top: 100px;
     box-sizing: content-box;
@@ -274,19 +301,21 @@ h1 , h2 {
     text-align: center;
 
 }
+
 .moovmedia {
-display: flex;
-padding-top: 50px;
-padding-left: 100px;
-gap: 50px;
-align-items: center;
+    display: flex;
+    padding-top: 50px;
+    padding-left: 100px;
+    gap: 50px;
+    align-items: center;
 }
+
 .unab {
-display: flex;
-padding-top: 100px;
-padding-left: 100px;
-gap: 50px;
-align-items: center;
+    display: flex;
+    padding-top: 100px;
+    padding-left: 100px;
+    gap: 50px;
+    align-items: center;
 }
 
 #experiencia h2 {
@@ -294,8 +323,9 @@ align-items: center;
     box-sizing: content-box;
     width: 100%;
     text-align: center;
-    
+
 }
+
 /*===============*/
 /*Clientes*/
 /*===============*/
@@ -305,47 +335,233 @@ align-items: center;
     box-sizing: border-box;
 }
 
+.clientes_logos1 , .clientes_logos2 {
+    display: flex;
+    margin: 50px;
+    gap: 50px;
+}
+
 /*===============*/
 /*Contacto*/
 /*===============*/
-    
-    #contacto {
-        padding-left: 0;
-        padding-right: 0;
-        width: 100%;
-        box-sizing: border-box;
+
+#contacto {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+#formulario h1 {
+    text-align: center;
+}
+
+.form_input {
+    resize: none;
+    border: solid;
+    width: 500px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.form_mesaje {
+    resize: none;
+    font-size: 20px;
+    height: 200px;
+}
+
+.form_data {
+    margin: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    resize: none;
+}
+
+.form_boton {
+    width: 120px;
+    height: 40px;
+    color: white;
+    background-color: #273a97;
+    border-radius: 10px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Footer*/
+footer {
+    margin-top: auto;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(38, 59, 152);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer_box {
+
+    box-sizing: content-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.footer__Links ul {
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/*Color NavFooter*/
+.footer__Links ul li a {
+    color: white;
+}
+
+.footer__Conacto img {
+    margin: 20px;
+}
+
+/*====================*/
+/*Responsive - Inicio*/
+/*==================*/
+@media (max-width: 900px) {
+
+    .presentacion,
+    h1,
+    h2,
+    p,
+    #botones,
+    .img_presentacion {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    #main {
+        display: inline;
+        align-items: center;
+    }
+
+    .presentacion {
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .botones {
         display: flex;
+        width: 50%;
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .presentacion,
+    h1,
+    h2,
+    p,
+    #botones,
+    .img_presentacion {
+
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    #main {
+        display: inline;
+        width: 90%;
+        height: 100%;
+        margin: 10px;
+    }
+
+    .presentacion {
+        padding-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .botones {
+        display: inline;
+        width: 50%;
+        margin-left: 70px;
+
+    }
+}
+
+/*=========================*/
+/*Responsive - Experiencia*/
+/*=======================*/
+
+@media (max-width: 800px) {
+    .moovmedia , .unab {
+        display: block;
         justify-content: center;
-    }
-
-    #formulario h1 {
         text-align: center;
+        padding-top: 100px;
+        padding-left: 100px;
     }
+.txt_moovmedia , .txt_unab {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+    #Clientes h2 {
+        margin-bottom: 50px;
+    }
+.logos {
+    display: inline;
+    max-width: 100%;
+    width: 100%;
+}
+    .clientes_logos1 , .clientes_logos2 {
+        max-width: 100%;
+        width: auto;
+        justify-content: center;
+        text-align: center;
+        }
 
+}
+
+@media (max-width: 550px) {
+    .logos {
+        display: inline;
+    }
+    .clientes_logos1 , .clientes_logos2 {
+        display: inline;
+        max-width: 100%;
+        }
+
+}
+
+/*======================*/
+/*Responsive - Contacto*/
+/*====================*/
+@media (max-width: 550px) {
     .form_input {
         resize: none;
         border: solid;
-        width: 500px;
+        width: 450px;
         height: 30px;
         font-size: 20px;
     }
-        .form_mesaje {
-            resize: none;
-            font-size: 20px;
-            height: 200px;
-        }
-    
-    .form_data {
-        margin: 20px;
-        margin-left: 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        resize: none;
-    }
 
     .form_boton {
-        width: 120px;
+        width: 100px;
         height: 40px;
         color: white;
         background-color: #273a97;
@@ -355,172 +571,18 @@ align-items: center;
         align-items: center;
         justify-content: center;
     }
-    
+}
 
-    /*Footer*/
-    footer {
-        margin-top: auto;
-        width: 100%;
-        height: 200px;
-        background-color: rgb(38, 59, 152);
-        display: flex; 
-        justify-content: center;
-        align-items: center;
-    
-    }
-
-    .footer_box {
-        
-        box-sizing: content-box;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around
-    }
-    
-.footer__Links ul { 
-        font-size: 20px;
-        display:flex;
-        list-style: none;
-        text-align: center;
-        text-decoration:none;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-    }
-
-    /*Color NavFooter*/
-    .footer__Links ul li a {
-        color: white;
-    }
-    
-    .footer__Conacto img {
-        margin:20px;
-        }
-
-    /*====================*/
-    /*Responsive - Inicio*/
-    /*==================*/
-    @media (max-width: 900px) {
-        .presentacion , h1 , h2 , p , #botones , .img_presentacion {
-            margin-top: 20px;
-            width: 80%;
-        }
-
-        #main {
-            display: inline;
-            align-items: center;
-        }
-        
-            .presentacion{
-                padding-left: 20px;
-                margin-top: 10px;
-                margin-bottom: 0px;
-            }
-        .botones {
-            display: flex;
-            width: 50%;
-            margin-left: 70px;
-        }
-    }
-        @media (max-width: 500px) {
-            .presentacion , h1 , h2 , p , #botones , .img_presentacion {
-                
-                margin-top: 20px;
-                width: 80%;
-            }
-            #main {
-                display: inline;
-                width: 90%;
-                height: 100%;
-                margin: 10px;
-            }
-                .presentacion{
-                    padding-left: 20px;
-                    margin-top: 10px;
-                    margin-bottom: 0px;
-                }
-                
-            .botones {
-                display: inline;
-                width: 50%;
-                margin-left: 70px;
-            
-            }
-        }
-
-    /*=========================*/
-    /*Responsive - Experiencia*/
-    /*por favor ayuda para revisar por que se cambian los resposives. La  idea es que lavista en full pantalla se vea todos los logos en una fila, en max width 800 en 2 filas y en max width 500 en una columna*/
-    /*=======================*/
-
-    @media (max-width: 800px) {
-        .moovmedia {
-            display: block;
-            justify-content: center;
-            padding-top: 100px;
-            padding-left: 100px;
-            gap: 50px;
-            }
-            .unab {
-            justify-content: center;
-            display: block;
-            padding-top: 100px;
-            padding-left: 100px;
-            gap: 50px;
-            
-            }
-            #Clientes h2 {
-                margin-bottom: 50px;
-            }
-            .clientes_logos1 {
-                max-width: 100%;
-                display: flex;
-            }
-            .clientes_logos2 {
-                max-width: 100%;
-                display: flex;
-            }
-    }
-
-    @media (max-width: 550px) {
-        .logos {
-            display: inline;
-        }
-        
-    }
-    /*======================*/
-    /*Responsive - Contacto*/
-    /*====================*/
-    @media (max-width: 550px) {
+@media (max-width: 500px) {
     .form_input {
         resize: none;
         border: solid;
-        width: 450px;
+        width: 400px;
         height: 30px;
         font-size: 20px;
     }
-        .form_boton {
-            width: 100px;
-            height: 40px;
-            color: white;
-            background-color: #273a97;
-            border-radius: 10px;
-            margin: 50px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-    @media (max-width: 500px) {
-        .form_input {
-            resize: none;
-            border: solid;
-            width: 400px;
-            height: 30px;
-            font-size: 20px;
-        }
-    }
-    /*======================*/
-    /*Responsive - Footer*/
-    /*====================*/
+}
+
+/*======================*/
+/*Responsive - Footer*/
+/*====================*/
