@@ -1,0 +1,32 @@
+/*===============*/
+/*Servicios 2*/
+/*===============*/
+#img_servicios {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: repeat(2, 500px);
+    gap: 10px;
+    grid-area:
+        "txt_rrss img_rrss"
+        "txt_web img_wen"
+        "txt_edicion img_edicion";
+}
+
+.txt_rrss {
+    background-size: cover;
+}
+
+.img_rrss {
+    background-image: url(../Images/Images/Servicio\ Redes\ Sociales.jpeg);
+    background-size: cover;
+}
+
+.img_web {
+    background-image: url(../Images/Images/Servicio\ Administración\ Web.jpeg);
+    background-size: cover;
+}
+
+.img_edicion {
+    background-image: url(../Images/Images/Servicio\ Edición\ Videos.jpeg);
+    background-size: cover;
+}
