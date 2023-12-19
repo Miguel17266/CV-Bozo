@@ -7,38 +7,28 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    .footer_box {
+        box-sizing: content-box;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+    }
+    .footer__Links ul {
+        font-size: 20px;
+        display: flex;
+        list-style: none;
+        text-align: center;
+        text-decoration: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        li a {
+            color: white;
+        }
+    }
+    .footer__Conacto img {
+        margin: 20px;
+    }
+    
 }
-
-.footer_box {
-
-    box-sizing: content-box;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around
-}
-
-.footer__Links ul {
-    font-size: 20px;
-    display: flex;
-    list-style: none;
-    text-align: center;
-    text-decoration: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-/*Color NavFooter*/
-.footer__Links ul li a {
-    color: white;
-}
-
-.footer__Conacto img {
-    margin: 20px;
-}
-
-/*======================*/
-/*Responsive - Footer*/
-/*====================*/
